@@ -1,0 +1,46 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    var userName = Context.User.Identity.Name;
+}
+
+<h1>Chat</h1>
+
+User Name:<h3 id="Name">@userName</h3> 
+<br />
+Message : <input id="Msg" type="text" placeholder="Enter Message here" name="Msg" class="form form-control"/>
+<br />
+<input type="button" value="Send" class="btn btn-primary" onclick="SendData()" />
+<div id="Messages" ></div>
+@section Scripts
+{
+ 
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/microsoft-signalr/signalr.min.js"></script>
+    <script>
+
+        var Hub = new signalR.HubConnectionBuilder().withUrl("/chat").build();
+
+        Hub.start().then( ()=> {
+            console.log("Connection Succes");
+        });
+
+        Hub.on("NotifyMessage", function (name,msg) {
+            
+            $("#Messages").append("<div>" + name + ":" + msg + "</div>");
+
+        
+        })
+
+        function SendData() {
+           
+            let name = '@userName';
+            let msg = $("#Msg").val();
+            console.log(name + ":" + msg);
+            Hub.invoke("NewMessage", name, msg);
+            $("#Msg").val("");
+        }
+
+
+    </script>
+}
