@@ -5,15 +5,12 @@ namespace ImoApp.Models
 {
     public class ImoContext : IdentityDbContext<ApplicationUser>
     {
-        public ImoContext()
-        {
-            
-        }
+
         public ImoContext(DbContextOptions<ImoContext> options) : base(options)
         {
         }
 
-        
+
 
 
         public DbSet<MessageChat> MessageChats { get; set; }

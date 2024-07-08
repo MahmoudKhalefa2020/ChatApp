@@ -11389,11 +11389,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\ITI\\iTi -Intake 43\\Back-End\\1.C#\\3-Monthes\\iTi-C#\\2. Adcanced C#\\Practice\\API\\ImoApp\\ImoApp\\ImoApp.csproj",
+      "projectUniqueName": "D:\\Projects\\Back end\\ChatApp\\ImoApp\\ImoApp.csproj",
       "projectName": "ImoApp",
-      "projectPath": "D:\\ITI\\iTi -Intake 43\\Back-End\\1.C#\\3-Monthes\\iTi-C#\\2. Adcanced C#\\Practice\\API\\ImoApp\\ImoApp\\ImoApp.csproj",
+      "projectPath": "D:\\Projects\\Back end\\ChatApp\\ImoApp\\ImoApp.csproj",
       "packagesPath": "C:\\Users\\Mahmoud Khalefa\\.nuget\\packages\\",
-      "outputPath": "D:\\ITI\\iTi -Intake 43\\Back-End\\1.C#\\3-Monthes\\iTi-C#\\2. Adcanced C#\\Practice\\API\\ImoApp\\ImoApp\\obj\\",
+      "outputPath": "D:\\Projects\\Back end\\ChatApp\\ImoApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Mahmoud Khalefa\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -11416,6 +11416,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -11464,7 +11469,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
       }
     }
   }

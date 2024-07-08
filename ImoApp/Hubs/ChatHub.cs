@@ -3,29 +3,49 @@ using Microsoft.AspNetCore.SignalR;
 
 namespace ImoApp.Hubs
 {
-    public class ChatHub:Hub
+    public class ChatHub : Hub
     {
-        private readonly ImoContext imoContext ;
-        public ChatHub(ImoContext _imoContext)
+        private readonly ILogger<ChatHub> _logger;
+        private readonly ImoContext _imoContext;
+        public ChatHub(ILogger<ChatHub> logger, ImoContext imoContext)
         {
-            imoContext = _imoContext ;
-        }
-        public void NewMessage (string username ,string message)
-        {
-            var messagechat = new MessageChat();
-            messagechat.User = username;
-            messagechat.Message = message;
-            imoContext.MessageChats.Add(messagechat);
-            imoContext.SaveChanges();            
-            Clients.All.SendAsync("NotifyMessage", username, message);
-
+            _logger = logger;
+            _imoContext = imoContext;
         }
 
-        public override Task OnConnectedAsync()
+        public async Task SendMessage(string user, string message)
         {
-            string Name = Context.User.Identity.Name;
-            Clients.All.SendAsync("NewUser", Name, Context.ConnectionId);
-            return base.OnConnectedAsync();
+            await Clients.All.SendAsync("ReceiveMessage", user, message);
+            MessageChat messageChat = new MessageChat()
+            {
+                Message = message,
+                User = user
+
+            };
+            _imoContext.MessageChats.Add(messageChat);
+            await _imoContext.SaveChangesAsync();
         }
+
+
+
+        #region chat Methods
+        //public void NewMessage(string username, string message)
+        //{
+        //	var messagechat = new MessageChat();
+        //	messagechat.User = username;
+        //	messagechat.Message = message;
+        //	imoContext.MessageChats.Add(messagechat);
+        //	imoContext.SaveChanges();
+        //	Clients.All.SendAsync("NotifyMessage", username, message);
+
+        //}
+        //public override Task OnConnectedAsync()
+        //{
+        //	string Name = Context.User.Identity.Name;
+        //	Clients.All.SendAsync("NewUser", Name, Context.ConnectionId);
+        //	return base.OnConnectedAsync();
+        //}
+        #endregion
+
     }
 }

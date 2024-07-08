@@ -1,5 +1,4 @@
-﻿
-@{
+﻿@{
     ViewData["Title"] = "Index";
     Layout = null;
     var userName = Context.User.Identity.Name;
@@ -17,75 +16,79 @@
     <title>Document</title>
     <link rel="stylesheet" href="/lib/twitter-bootstrap/css/bootstrap.min.css">
     <link href="~/font-awesome/css/all.min.css" rel="stylesheet" />
-  
+    <style>
+        .full-screen-card {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+
 </head>
 <body>
     @if (User.Identity.IsAuthenticated)
     {
-        <nav class="navbar navbar-expand-lg bg-success">
-            <div class="container-md">
-                <a class="navbar-brand" asp-action="Logout" asp-controller="Account">LogOut</a>
-            </div>
-
-        </nav>
-    }
-    <div class="container py-3">
-        <div class="row">
-            <div class=" border border-1 border-black col-4">
-                <div>
-                    
-                </div>
-                <div>
-                    password
-                </div>
-            </div>
-            <div class="col-8 position-relative">
-                <div class="border rounded-3 border-primary vh-100  border-2 position-relative">
-                    <div class="header-container">
-                        <h3 id="Name" class="text-center w-100 bg-primary">@userName</h3>
-                    </div>
-                    <div id="Messages"class="py-2"></div>
-                    <div class="input-group  position-absolute bottom-0">
-
-                        <span class="input-group-text" id="basic-addon1"><a class="icon-link-hover" onclick="SendData()"><i class="fa-solid fa-share-from-square"></i></a></span>
-
-                        <input id="Msg" type="text" placeholder="Enter Message here" name="Msg" class="form form-control" aria-label="Username" aria-describedby="basic-addon1" />
-                    </div>
-                </div>
-
-            </div>
-        </div>
+    <nav class="navbar navbar-expand-lg bg-success">
+    <div class="container-md">
+    <a class="navbar-brand" asp-action="Logout" asp-controller="Account">LogOut</a>
     </div>
+
+    </nav>
+    }
+
+	<div classc="content">
+		<div class="container p-2 vh-100 position-relative">
+
+			<h1 class="h3 mb-3">Messages</h1>
+
+			<div class="row g-0 position-absolute top-0 bottom-0 w-100 p-5">
+                @* <partial name="_AsideChat" /> *@
+				<div class="col-lg-7 col-xl-9 position-relative">
+
+                    <partial name="_ChatBodyHead" />
+
+                    <partial name="_ChatBody" />
+
+                    <partial name="_SenderChat" />
+					
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/microsoft-signalr/signalr.min.js"></script>
     <script>
 
-        var Hub = new signalR.HubConnectionBuilder().withUrl("/chat").build();
-
-        Hub.start().then(() => {
-            console.log("Connection Succes");
+        var hubConnection = new signalR.HubConnectionBuilder().withUrl("/chat").build();
+        // var userName = prompt("Please enter your Name");
+        var user = "@userName"
+        hubConnection.start().then(function () {
+            $("#sendButton").click(function () {
+                
+                var message = $("#message").val();
+                hubConnection.invoke("SendMessage", user, message).catch(function (err) {
+                    return console.error(err.toString());
+                });
+                $("#message").val("").focus();
+            });
+        }).catch(function (err) {
+            console.error(err.toString());
         });
 
-        Hub.on("NotifyMessage", function (name, msg) {
+        hubConnection.on("ReceiveMessage", function (user, message) {
+            var encodedUser = user;
+            var encodedMsg = message;
+            $("#chatbox").append("<p><strong>" + encodedUser + "</strong>: " + encodedMsg + "</p>");
+        });
 
-            $("#Messages").append("<div>" + name + " : " + msg + "</div>");
 
-
-        })
-
-        function SendData() {
-
-            let name = '@userName';
-            let msg = $("#Msg").val();
-            console.log(name + ":" + msg);
-            Hub.invoke("NewMessage", name, msg);
-            $("#Msg").val("");
-        }
 
 
     </script>
 </body>
 </html>
 
- 
- 
+
+

@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ImoApp.Migrations
 {
     [DbContext(typeof(ImoContext))]
-    [Migration("20231123142131_EditUser")]
-    partial class EditUser
+    [Migration("20240513175152_init")]
+    partial class init
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

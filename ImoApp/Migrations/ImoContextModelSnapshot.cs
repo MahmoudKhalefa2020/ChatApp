@@ -104,6 +104,9 @@ namespace ImoApp.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<DateTime>("MessageDate")
+                        .HasColumnType("datetime2");
+
                     b.Property<string>("User")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");

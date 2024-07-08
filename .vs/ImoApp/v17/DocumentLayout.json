@@ -1,0 +1,207 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Projects\\Back end\\ChatApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A7A23EBB-91DF-4736-9BA9-B6221A84E3E2}|ImoApp\\ImoApp.csproj|d:\\projects\\back end\\chatapp\\imoapp\\views\\shared\\_chatbodyhead.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A7A23EBB-91DF-4736-9BA9-B6221A84E3E2}|ImoApp\\ImoApp.csproj|solutionrelative:imoapp\\views\\shared\\_chatbodyhead.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7A23EBB-91DF-4736-9BA9-B6221A84E3E2}|ImoApp\\ImoApp.csproj|d:\\projects\\back end\\chatapp\\imoapp\\views\\user\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A7A23EBB-91DF-4736-9BA9-B6221A84E3E2}|ImoApp\\ImoApp.csproj|solutionrelative:imoapp\\views\\user\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7A23EBB-91DF-4736-9BA9-B6221A84E3E2}|ImoApp\\ImoApp.csproj|d:\\projects\\back end\\chatapp\\imoapp\\views\\shared\\_asidechat.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A7A23EBB-91DF-4736-9BA9-B6221A84E3E2}|ImoApp\\ImoApp.csproj|solutionrelative:imoapp\\views\\shared\\_asidechat.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7A23EBB-91DF-4736-9BA9-B6221A84E3E2}|ImoApp\\ImoApp.csproj|d:\\projects\\back end\\chatapp\\imoapp\\views\\shared\\_chatbody.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A7A23EBB-91DF-4736-9BA9-B6221A84E3E2}|ImoApp\\ImoApp.csproj|solutionrelative:imoapp\\views\\shared\\_chatbody.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7A23EBB-91DF-4736-9BA9-B6221A84E3E2}|ImoApp\\ImoApp.csproj|d:\\projects\\back end\\chatapp\\imoapp\\views\\shared\\_senderchat.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A7A23EBB-91DF-4736-9BA9-B6221A84E3E2}|ImoApp\\ImoApp.csproj|solutionrelative:imoapp\\views\\shared\\_senderchat.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7A23EBB-91DF-4736-9BA9-B6221A84E3E2}|ImoApp\\ImoApp.csproj|d:\\projects\\back end\\chatapp\\imoapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7A23EBB-91DF-4736-9BA9-B6221A84E3E2}|ImoApp\\ImoApp.csproj|solutionrelative:imoapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7A23EBB-91DF-4736-9BA9-B6221A84E3E2}|ImoApp\\ImoApp.csproj|d:\\projects\\back end\\chatapp\\imoapp\\models\\messagechat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7A23EBB-91DF-4736-9BA9-B6221A84E3E2}|ImoApp\\ImoApp.csproj|solutionrelative:imoapp\\models\\messagechat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7A23EBB-91DF-4736-9BA9-B6221A84E3E2}|ImoApp\\ImoApp.csproj|d:\\projects\\back end\\chatapp\\imoapp\\hubs\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7A23EBB-91DF-4736-9BA9-B6221A84E3E2}|ImoApp\\ImoApp.csproj|solutionrelative:imoapp\\hubs\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Projects\\Back end\\ChatApp\\ImoApp\\Migrations\\20240708053530_updatechatModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ImoApp\\Migrations\\20240708053530_updatechatModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7A23EBB-91DF-4736-9BA9-B6221A84E3E2}|ImoApp\\ImoApp.csproj|d:\\projects\\back end\\chatapp\\imoapp\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7A23EBB-91DF-4736-9BA9-B6221A84E3E2}|ImoApp\\ImoApp.csproj|solutionrelative:imoapp\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7A23EBB-91DF-4736-9BA9-B6221A84E3E2}|ImoApp\\ImoApp.csproj|d:\\projects\\back end\\chatapp\\imoapp\\models\\imocontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7A23EBB-91DF-4736-9BA9-B6221A84E3E2}|ImoApp\\ImoApp.csproj|solutionrelative:imoapp\\models\\imocontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_ChatBodyHead.cshtml",
+              "DocumentMoniker": "D:\\Projects\\Back end\\ChatApp\\ImoApp\\Views\\Shared\\_ChatBodyHead.cshtml",
+              "RelativeDocumentMoniker": "ImoApp\\Views\\Shared\\_ChatBodyHead.cshtml",
+              "ToolTip": "D:\\Projects\\Back end\\ChatApp\\ImoApp\\Views\\Shared\\_ChatBodyHead.cshtml",
+              "RelativeToolTip": "ImoApp\\Views\\Shared\\_ChatBodyHead.cshtml",
+              "ViewState": "AQIAABwAAAAAAAAAAAAAADMAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-08T15:10:26.167Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_AsideChat.cshtml",
+              "DocumentMoniker": "D:\\Projects\\Back end\\ChatApp\\ImoApp\\Views\\Shared\\_AsideChat.cshtml",
+              "RelativeDocumentMoniker": "ImoApp\\Views\\Shared\\_AsideChat.cshtml",
+              "ToolTip": "D:\\Projects\\Back end\\ChatApp\\ImoApp\\Views\\Shared\\_AsideChat.cshtml",
+              "RelativeToolTip": "ImoApp\\Views\\Shared\\_AsideChat.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-08T15:06:49.923Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "20240708053530_updatechatModel.cs",
+              "DocumentMoniker": "D:\\Projects\\Back end\\ChatApp\\ImoApp\\Migrations\\20240708053530_updatechatModel.cs",
+              "RelativeDocumentMoniker": "ImoApp\\Migrations\\20240708053530_updatechatModel.cs",
+              "ToolTip": "D:\\Projects\\Back end\\ChatApp\\ImoApp\\Migrations\\20240708053530_updatechatModel.cs",
+              "RelativeToolTip": "ImoApp\\Migrations\\20240708053530_updatechatModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-08T05:35:31.053Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "D:\\Projects\\Back end\\ChatApp\\ImoApp\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "ImoApp\\Controllers\\UserController.cs",
+              "ToolTip": "D:\\Projects\\Back end\\ChatApp\\ImoApp\\Controllers\\UserController.cs",
+              "RelativeToolTip": "ImoApp\\Controllers\\UserController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-08T05:14:39.651Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ImoContext.cs",
+              "DocumentMoniker": "D:\\Projects\\Back end\\ChatApp\\ImoApp\\Models\\ImoContext.cs",
+              "RelativeDocumentMoniker": "ImoApp\\Models\\ImoContext.cs",
+              "ToolTip": "D:\\Projects\\Back end\\ChatApp\\ImoApp\\Models\\ImoContext.cs",
+              "RelativeToolTip": "ImoApp\\Models\\ImoContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-08T05:09:37.733Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MessageChat.cs",
+              "DocumentMoniker": "D:\\Projects\\Back end\\ChatApp\\ImoApp\\Models\\MessageChat.cs",
+              "RelativeDocumentMoniker": "ImoApp\\Models\\MessageChat.cs",
+              "ToolTip": "D:\\Projects\\Back end\\ChatApp\\ImoApp\\Models\\MessageChat.cs",
+              "RelativeToolTip": "ImoApp\\Models\\MessageChat.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-08T05:08:21.587Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Projects\\Back end\\ChatApp\\ImoApp\\Program.cs",
+              "RelativeDocumentMoniker": "ImoApp\\Program.cs",
+              "ToolTip": "D:\\Projects\\Back end\\ChatApp\\ImoApp\\Program.cs",
+              "RelativeToolTip": "ImoApp\\Program.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAAAACsAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-07T20:47:22.341Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ChatHub.cs",
+              "DocumentMoniker": "D:\\Projects\\Back end\\ChatApp\\ImoApp\\Hubs\\ChatHub.cs",
+              "RelativeDocumentMoniker": "ImoApp\\Hubs\\ChatHub.cs",
+              "ToolTip": "D:\\Projects\\Back end\\ChatApp\\ImoApp\\Hubs\\ChatHub.cs",
+              "RelativeToolTip": "ImoApp\\Hubs\\ChatHub.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAA0AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-07T20:46:40.248Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_SenderChat.cshtml",
+              "DocumentMoniker": "D:\\Projects\\Back end\\ChatApp\\ImoApp\\Views\\Shared\\_SenderChat.cshtml",
+              "RelativeDocumentMoniker": "ImoApp\\Views\\Shared\\_SenderChat.cshtml",
+              "ToolTip": "D:\\Projects\\Back end\\ChatApp\\ImoApp\\Views\\Shared\\_SenderChat.cshtml",
+              "RelativeToolTip": "ImoApp\\Views\\Shared\\_SenderChat.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-07T20:27:23.115Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_ChatBody.cshtml",
+              "DocumentMoniker": "D:\\Projects\\Back end\\ChatApp\\ImoApp\\Views\\Shared\\_ChatBody.cshtml",
+              "RelativeDocumentMoniker": "ImoApp\\Views\\Shared\\_ChatBody.cshtml",
+              "ToolTip": "D:\\Projects\\Back end\\ChatApp\\ImoApp\\Views\\Shared\\_ChatBody.cshtml",
+              "RelativeToolTip": "ImoApp\\Views\\Shared\\_ChatBody.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-07T20:27:08.513Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Projects\\Back end\\ChatApp\\ImoApp\\Views\\User\\Index.cshtml",
+              "RelativeDocumentMoniker": "ImoApp\\Views\\User\\Index.cshtml",
+              "ToolTip": "D:\\Projects\\Back end\\ChatApp\\ImoApp\\Views\\User\\Index.cshtml",
+              "RelativeToolTip": "ImoApp\\Views\\User\\Index.cshtml",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAAACwAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-07T20:28:20.582Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

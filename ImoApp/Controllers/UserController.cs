@@ -1,9 +1,8 @@
-﻿using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 
 namespace ImoApp.Controllers
 {
-    [Authorize]
+    //[Authorize]
     public class UserController : Controller
     {
         public IActionResult Index()

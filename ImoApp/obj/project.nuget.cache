@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YZoburuziHZBoFVBg4ZkHefV1FXBbqVa1Zkw1DMUVYlgsjVg7hYSyyE6pkQYhUh/GI0MO9+dTEe4017kE+dOHg==",
+  "dgSpecHash": "oarhaJ4HwSUaUG+iNzfqJnJTTP/tOPwxz7qcAplO1/8E4nlbuRyr8+YAUitj7XhoRBshxjL/AFkIdjdCcJJ3bw==",
   "success": true,
-  "projectFilePath": "D:\\ITI\\iTi -Intake 43\\Back-End\\1.C#\\3-Monthes\\iTi-C#\\2. Adcanced C#\\Practice\\API\\ImoApp\\ImoApp\\ImoApp.csproj",
+  "projectFilePath": "D:\\Projects\\Back end\\ChatApp\\ImoApp\\ImoApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Mahmoud Khalefa\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\Mahmoud Khalefa\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

@@ -11,10 +11,10 @@ namespace ImoApp.Controllers
         private readonly UserManager<ApplicationUser> userManager;
         private readonly SignInManager<ApplicationUser> signInManager;
 
-        public AccountController(UserManager<ApplicationUser>_usermanager,SignInManager<ApplicationUser>_signInManager)
+        public AccountController(UserManager<ApplicationUser> _usermanager, SignInManager<ApplicationUser> _signInManager)
         {
             userManager = _usermanager;
-            signInManager =_signInManager;
+            signInManager = _signInManager;
         }
 
         public IActionResult Registration()
@@ -29,7 +29,7 @@ namespace ImoApp.Controllers
 
         {
 
-            if(ModelState.IsValid) 
+            if (ModelState.IsValid)
             {
                 ApplicationUser user = new ApplicationUser();
 
@@ -38,11 +38,11 @@ namespace ImoApp.Controllers
                 user.PhoneNumberConfirmed = userRegister.PhoneNumberConfirmed;
                 user.PasswordHash = userRegister.Password;
                 user.PasswordConfirmed = userRegister.PsswordConfirmed;
-                IdentityResult result = await userManager.CreateAsync(user,userRegister.Password);
-                if (result.Succeeded) 
+                IdentityResult result = await userManager.CreateAsync(user, userRegister.Password);
+                if (result.Succeeded)
                 {
                     await signInManager.SignInAsync(user, false);
-                    return RedirectToAction("Index", "Home");
+                    return RedirectToAction(nameof(Login));
 
 
                 }
@@ -51,10 +51,10 @@ namespace ImoApp.Controllers
                 {
                     foreach (var item in result.Errors)
                     {
-                        ModelState.AddModelError("",item.Description);
+                        ModelState.AddModelError("", item.Description);
                     }
                 }
-               
+
             }
 
             return View(userRegister);
@@ -69,17 +69,17 @@ namespace ImoApp.Controllers
 
 
         [HttpPost]
-        public async Task <IActionResult> Login(UserLogin userLogin)
+        public async Task<IActionResult> Login(UserLogin userLogin)
 
         {
-            if(ModelState.IsValid)
+            if (ModelState.IsValid)
             {
                 ApplicationUser applicationUser = await userManager.FindByNameAsync(userLogin.UserName);
 
-                if(applicationUser !=null)
+                if (applicationUser != null)
                 {
                     SignInResult Result = await signInManager.PasswordSignInAsync(applicationUser, userLogin.Password, userLogin.RememberMe, false);
-                    if(Result.Succeeded) 
+                    if (Result.Succeeded)
                     {
                         return RedirectToAction("Index", "User");
                     }
@@ -89,7 +89,7 @@ namespace ImoApp.Controllers
                 {
                     ModelState.AddModelError("", "WrongData");
                 }
-                
+
             }
             return View(userLogin);
 
@@ -99,7 +99,7 @@ namespace ImoApp.Controllers
         public IActionResult Logout()
         {
             signInManager.SignOutAsync();
-            return RedirectToAction("Index","Home");
+            return RedirectToAction("Index", "Home");
         }
     }
 }

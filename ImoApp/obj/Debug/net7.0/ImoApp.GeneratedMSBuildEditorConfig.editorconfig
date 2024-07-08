@@ -9,61 +9,83 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ImoApp
 build_property.RootNamespace = ImoApp
-build_property.ProjectDir = D:\ITI\iTi -Intake 43\Back-End\1.C#\3-Monthes\iTi-C#\2. Adcanced C#\Practice\API\ImoApp\ImoApp\
+build_property.ProjectDir = D:\Projects\Back end\ChatApp\ImoApp\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\ITI\iTi -Intake 43\Back-End\1.C#\3-Monthes\iTi-C#\2. Adcanced C#\Practice\API\ImoApp\ImoApp
+build_property.MSBuildProjectDirectory = D:\Projects\Back end\ChatApp\ImoApp
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/ITI/iTi -Intake 43/Back-End/1.C\#/3-Monthes/iTi-C\#/2. Adcanced C\#/Practice/API/ImoApp/ImoApp/Views/Account/Login.cshtml]
+[D:/Projects/Back end/ChatApp/ImoApp/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ITI/iTi -Intake 43/Back-End/1.C\#/3-Monthes/iTi-C\#/2. Adcanced C\#/Practice/API/ImoApp/ImoApp/Views/Account/Registration.cshtml]
+[D:/Projects/Back end/ChatApp/ImoApp/Views/Account/Registration.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3RyYXRpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ITI/iTi -Intake 43/Back-End/1.C\#/3-Monthes/iTi-C\#/2. Adcanced C\#/Practice/API/ImoApp/ImoApp/Views/Home/Index.cshtml]
+[D:/Projects/Back end/ChatApp/ImoApp/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ITI/iTi -Intake 43/Back-End/1.C\#/3-Monthes/iTi-C\#/2. Adcanced C\#/Practice/API/ImoApp/ImoApp/Views/Home/Privacy.cshtml]
+[D:/Projects/Back end/ChatApp/ImoApp/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ITI/iTi -Intake 43/Back-End/1.C\#/3-Monthes/iTi-C\#/2. Adcanced C\#/Practice/API/ImoApp/ImoApp/Views/Shared/Error.cshtml]
+[D:/Projects/Back end/ChatApp/ImoApp/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ITI/iTi -Intake 43/Back-End/1.C\#/3-Monthes/iTi-C\#/2. Adcanced C\#/Practice/API/ImoApp/ImoApp/Views/Shared/LoginRegisterLayout.cshtml]
+[D:/Projects/Back end/ChatApp/ImoApp/Views/Shared/LoginRegisterLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXExvZ2luUmVnaXN0ZXJMYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ITI/iTi -Intake 43/Back-End/1.C\#/3-Monthes/iTi-C\#/2. Adcanced C\#/Practice/API/ImoApp/ImoApp/Views/Shared/_ImoLayout.cshtml]
+[D:/Projects/Back end/ChatApp/ImoApp/Views/Shared/_AsideChat.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Bc2lkZUNoYXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Back end/ChatApp/ImoApp/Views/Shared/_ChatBody.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9DaGF0Qm9keS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Back end/ChatApp/ImoApp/Views/Shared/_ChatBodyHead.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9DaGF0Qm9keUhlYWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Back end/ChatApp/ImoApp/Views/Shared/_Header.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9IZWFkZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Back end/ChatApp/ImoApp/Views/Shared/_ImoLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9JbW9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ITI/iTi -Intake 43/Back-End/1.C\#/3-Monthes/iTi-C\#/2. Adcanced C\#/Practice/API/ImoApp/ImoApp/Views/Shared/_Nav.cshtml]
+[D:/Projects/Back end/ChatApp/ImoApp/Views/Shared/_Nav.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9OYXYuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ITI/iTi -Intake 43/Back-End/1.C\#/3-Monthes/iTi-C\#/2. Adcanced C\#/Practice/API/ImoApp/ImoApp/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/Projects/Back end/ChatApp/ImoApp/Views/Shared/_SenderChat.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9TZW5kZXJDaGF0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Back end/ChatApp/ImoApp/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ITI/iTi -Intake 43/Back-End/1.C\#/3-Monthes/iTi-C\#/2. Adcanced C\#/Practice/API/ImoApp/ImoApp/Views/User/Index.cshtml]
+[D:/Projects/Back end/ChatApp/ImoApp/Views/User/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ITI/iTi -Intake 43/Back-End/1.C\#/3-Monthes/iTi-C\#/2. Adcanced C\#/Practice/API/ImoApp/ImoApp/Views/_ViewImports.cshtml]
+[D:/Projects/Back end/ChatApp/ImoApp/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ITI/iTi -Intake 43/Back-End/1.C\#/3-Monthes/iTi-C\#/2. Adcanced C\#/Practice/API/ImoApp/ImoApp/Views/_ViewStart.cshtml]
+[D:/Projects/Back end/ChatApp/ImoApp/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ITI/iTi -Intake 43/Back-End/1.C\#/3-Monthes/iTi-C\#/2. Adcanced C\#/Practice/API/ImoApp/ImoApp/Views/Shared/_Layout.cshtml]
+[D:/Projects/Back end/ChatApp/ImoApp/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-paggr2hi7z
