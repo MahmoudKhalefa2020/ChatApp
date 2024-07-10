@@ -4,71 +4,68 @@
     var userName = Context.User.Identity.Name;
 }
 
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/lib/twitter-bootstrap/css/bootstrap.min.css">
-    <link href="~/font-awesome/css/all.min.css" rel="stylesheet" />
-    <style>
-        .full-screen-card {
-            width: 100%;
-            height: 100%;
-        }
-    </style>
-
+    <title>Responsive Chat Interface</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="d:\projects\back end\chatapp\imoapp\wwwroot\css\style.css" />
 </head>
+
 <body>
     @if (User.Identity.IsAuthenticated)
     {
-    <nav class="navbar navbar-expand-lg bg-success">
-    <div class="container-md">
-    <a class="navbar-brand" asp-action="Logout" asp-controller="Account">LogOut</a>
-    </div>
+        <nav class="navbar navbar-expand-lg bg-primary">
+            <div class="container-md">
+                <a class="navbar-brand" asp-action="Logout" asp-controller="Account">LogOut</a>
+            </div>
 
-    </nav>
+        </nav>
     }
-
-	<div classc="content">
-		<div class="container p-2 vh-100 position-relative">
-
-			<h1 class="h3 mb-3">Messages</h1>
-
-			<div class="row g-0 position-absolute top-0 bottom-0 w-100 p-5">
-                @* <partial name="_AsideChat" /> *@
-				<div class="col-lg-7 col-xl-9 position-relative">
-
-                    <partial name="_ChatBodyHead" />
-
-                    <partial name="_ChatBody" />
-
-                    <partial name="_SenderChat" />
-					
-				</div>
-			</div>
-
-		</div>
-	</div>
-
-
+    <section style="background-color: #CDC4F9;">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card" id="chat3" style="border-radius: 15px;">
+                        <div class="card-body">
+                            <div class="row">
+                                <!-- Aside Tab -->
+                                <partial name="_AsideChat" />
+                                <div class="col-md-6 col-lg-7 col-xl-8">
+                                    <div class="pt-3 pe-3" style="position: relative; height: 400px; overflow-y: auto;">
+                                        <!-- Chat messages go here -->
+                                        <partial name="_ChatBody"/>
+                                    </div>
+                                    <!-- sender Message -->
+                                    <partial name="_SenderChat"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/microsoft-signalr/signalr.min.js"></script>
     <script>
 
         var hubConnection = new signalR.HubConnectionBuilder().withUrl("/chat").build();
-        // var userName = prompt("Please enter your Name");
+        // var user = prompt("Please enter your Name");
         var user = "@userName"
         hubConnection.start().then(function () {
             $("#sendButton").click(function () {
-                
+
                 var message = $("#message").val();
-                hubConnection.invoke("SendMessage", user, message).catch(function (err) {
+                var messageDate = new Date().toLocaleString();
+                hubConnection.invoke("SendMessage", user, message, messageDate).catch(function (err) {
                     return console.error(err.toString());
                 });
                 $("#message").val("").focus();
@@ -77,10 +74,14 @@
             console.error(err.toString());
         });
 
-        hubConnection.on("ReceiveMessage", function (user, message) {
+        hubConnection.on("ReceiveMessage", function (user, message,receivedDate) {
             var encodedUser = user;
             var encodedMsg = message;
-            $("#chatbox").append("<p><strong>" + encodedUser + "</strong>: " + encodedMsg + "</p>");
+            
+            var newMessage = '<p class="chatmessage small p-2 ms-3 mb-1 rounded-3 bg-body-tertiary bg-success border border-dark rounded">' +
+                '<strong>' + encodedUser + '</strong> : ' + encodedMsg +
+                '</p><p class="small ms-3 mb-3 rounded-3 text-muted float-end">' + receivedDate + '</p>';
+            $("#chatbox").append(newMessage);
         });
 
 
@@ -88,7 +89,6 @@
 
     </script>
 </body>
+
 </html>
-
-
 

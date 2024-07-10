@@ -46,7 +46,7 @@ namespace ImoApp
 			app.UseAuthorization();
 			app.MapControllerRoute(
 				name: "default",
-				pattern: "{controller=Home}/{action=Index}");
+				pattern: "{controller=User}/{action=Index}");
 
 			app.MapHub<ChatHub>("/chat");
 			app.Run();

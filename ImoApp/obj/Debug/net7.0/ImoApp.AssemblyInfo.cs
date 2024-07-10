@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ImoApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+efdafead65f8a0fde70663ace9b1d837064ad92e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1796a8741cd994d30754aedc5565b2bb5d38de66")]
 [assembly: System.Reflection.AssemblyProductAttribute("ImoApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ImoApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
